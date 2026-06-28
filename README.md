@@ -2,8 +2,6 @@
 
 An AI-powered healthcare monitoring system that detects human falls using LiDAR and Computer Vision while preserving user privacy through selective camera activation.
 
----
-
 ## Overview
 
 Traditional fall detection systems depend on wearable devices or continuous camera surveillance, both of which introduce challenges related to comfort, compliance, and privacy.
@@ -18,7 +16,6 @@ This project presents an intelligent fall detection system that combines:
 
 The system continuously monitors patient movement using LiDAR. The camera activates only after a potential fall has been detected, reducing unnecessary surveillance while enabling visual confirmation.
 
----
 
 ## Problem Statement
 
@@ -32,7 +29,7 @@ Current fall detection systems often suffer from:
 
 This project addresses these challenges using LiDAR-driven fall detection and selective camera activation.
 
----
+
 
 ## Features
 
@@ -45,7 +42,6 @@ This project addresses these challenges using LiDAR-driven fall detection and se
 - Secure alert transmission
 - Hospital-ready architecture
 
----
 
 ## System Architecture
 
@@ -100,7 +96,6 @@ Check Again
 | SDK | RPLIDAR SDK |
 | OS | NVIDIA JetPack |
 
----
 
 ## Hardware Used
 
@@ -109,7 +104,6 @@ Check Again
 - USB Camera
 - Edge Computing Device
 
----
 
 ## Workflow
 
@@ -122,7 +116,6 @@ Check Again
 7. Alert generated.
 8. Notification sent to caregiver.
 
----
 
 ## Privacy
 
@@ -130,7 +123,6 @@ Unlike conventional surveillance systems, this solution activates the camera onl
 
 This significantly improves user privacy while maintaining safety.
 
----
 
 ## Applications
 
@@ -141,7 +133,6 @@ This significantly improves user privacy while maintaining safety.
 - Industrial Safety
 - Assisted Living
 
----
 
 ## Future Improvements
 
@@ -151,13 +142,11 @@ This significantly improves user privacy while maintaining safety.
 - Wearable integration
 - Edge optimization using TensorRT
 
----
 
 ## Project Status
 
 Research Prototype
 
----
 
 ## Authors
 
