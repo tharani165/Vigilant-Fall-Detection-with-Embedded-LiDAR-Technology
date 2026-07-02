@@ -89,7 +89,13 @@ Fall Detected?
 Continue Monitoring
 ```
 
-Visual diagrams (system architecture, block diagram, workflow) will be added to [images/](images/) as they become available.
+**Block diagram**
+
+![Block diagram](images/diagrams/block_diagram.png)
+
+**Workflow**
+
+![Workflow](images/diagrams/workflow.png)
 
 ## Hardware Used
 
@@ -108,6 +114,7 @@ See [hardware/components_list.md](hardware/components_list.md) for the full list
 | Computer Vision | OpenCV |
 | Pose Detection | OpenPose |
 | Object Detection | YOLO |
+| Machine Learning | Gaussian Mixture Model, CNN |
 | Sensor SDK | RPLIDAR SDK |
 | Edge Platform | NVIDIA JetPack |
 | OS | Ubuntu (via JetPack) |
@@ -126,6 +133,16 @@ See [software/software_used.md](software/software_used.md) for details, and [sof
 7. An alert is generated.
 8. A notification is sent to the caregiver.
 
+## Companion App — PatientConnect
+
+A companion mobile app prototype, **PatientConnect**, was built to let caretakers manage patients/rooms and receive fall alerts.
+
+| | | |
+|---|---|---|
+| ![PatientConnect overview](images/app/patient_connect_overview.png) | ![Doctors list](images/app/patient_connect_doctors.png) | ![Edit patient](images/app/patient_connect_edit_patient.png) |
+
+See [images/README.md](images/README.md) for the full set of app screens.
+
 ## Privacy-Preserving Approach
 
 Unlike conventional surveillance systems, this solution keeps the camera off by default and activates it only after a suspected fall is detected by the LiDAR-based pipeline. This is intended to significantly reduce continuous visual monitoring while preserving the ability to confirm a fall event.
@@ -133,6 +150,12 @@ Unlike conventional surveillance systems, this solution keeps the camera off by 
 ## Results
 
 This project reached the stage of a research prototype and proof-of-concept validation as part of the associated invention disclosure and patent application. Detailed methodology and findings are documented in the patent application and reference paper — see [docs/](docs/). Quantitative performance figures are not restated in this README to avoid presenting unverified numbers; refer to the source documents directly.
+
+Below are demonstration captures from prototype testing: a simulated fall scenario, the resulting phone notification, and the alert message with the captured confirmation image.
+
+| Test scenario | Notification | Alert with captured image |
+|---|---|---|
+| ![Test scenario layout](images/results/test_scenario_layout.png) | ![Notification banner](images/results/notification_banner.png) | ![Fall alert with capture](images/results/fall_alert_with_capture.png) |
 
 ## Applications
 
@@ -178,7 +201,7 @@ Vigilant-Fall-Detection-with-Embedded-LiDAR-Technology/
 ├── README.md
 ├── LICENSE
 ├── docs/            Patent application, patent status, and papers
-├── images/          System diagrams and prototype photos (as available)
+├── images/          Diagrams, app screens, and demo results (see images/README.md)
 ├── hardware/        Bill of materials
 ├── software/        Technology stack and implementation notes
 ├── demo/            Demonstration video (as available)
